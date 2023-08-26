@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:typed_data';
-import 'package:flutter/material.dart';
 
+import 'package:flutter/material.dart';
 import 'package:sound_stream/sound_stream.dart';
 
 void main() {
@@ -21,9 +21,9 @@ class _MyAppState extends State<MyApp> {
   bool _isRecording = false;
   bool _isPlaying = false;
 
-  StreamSubscription _recorderStatus;
-  StreamSubscription _playerStatus;
-  StreamSubscription _audioStream;
+  StreamSubscription? _recorderStatus;
+  StreamSubscription? _playerStatus;
+  StreamSubscription? _audioStream;
 
   @override
   void initState() {
